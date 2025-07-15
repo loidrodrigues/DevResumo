@@ -4,12 +4,14 @@ interface TextInputProps {
   title: string;
   textbold: string;
   placeholder: string;
+  value: string;
   onChangeText: (text: string) => void;
 }
 export default function TextInputComponent({
   title,
   textbold,
   placeholder,
+  value,
   onChangeText,
 }: TextInputProps) {
   return (
@@ -21,6 +23,7 @@ export default function TextInputComponent({
         className="w-full p-4 bg-white border border-gray-600 rounded-lg h-20"
         placeholder={placeholder}
         multiline={true}
+        value={value}
         onChangeText={onChangeText}
       />
     </View>
