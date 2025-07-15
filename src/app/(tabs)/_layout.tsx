@@ -24,7 +24,7 @@ export default function RootLayout() {
       <Tabs.Screen
         name="history"
         options={{
-          title: "History",
+          title: "Seus Resumos",
           tabBarIcon: ({ color, focused }) => (
             <Ionicons
               name={focused ? "time-sharp" : "time-outline"}
